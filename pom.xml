@@ -454,12 +454,6 @@
   HBase requires at least version ${java.min.version} of the JDK to properly build from source.
   See the reference guide on building for more information: http://hbase.apache.org/book.html#build</message>
                 </requireJavaVersion>
-                <bannedDependencies>
-                  <excludes>
-                    <exclude>xerces:xercesImpl</exclude>
-                  </excludes>
-                  <message>We avoid adding our own Xerces jars to the classpath, see HBASE-16340.</message>
-                </bannedDependencies>
               </rules>
             </configuration>
           </execution>
